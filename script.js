@@ -23,12 +23,12 @@
 // console.log(fruitProcess(6,8))
 
 
-function fruitProcess(apple, oranges){
-    const juice = `This juice is made of ${apple} apples & ${oranges} oranges`
-    return juice;
-}
+// function fruitProcess(apple, oranges){
+//     const juice = `This juice is made of ${apple} apples & ${oranges} oranges`
+//     return juice;
+// }
 
-console.log(fruitProcess(2,2));
+// console.log(fruitProcess(2,2));
 
 
 
@@ -76,11 +76,64 @@ console.log(fruitProcess(2,2));
 
 // console.log(yearRetirement(2001));
 
-const yearRetirement = (birthyear, firstName) => {
-    const age = 2025 - birthyear;
-    const retirement = 65 - age;
-    return `${firstName} have time left for retirement is ${retirement} years`;
+// const yearRetirement = (birthyear, firstName) => {
+//     const age = 2025 - birthyear;
+//     const retirement = 65 - age;
+//     return `${firstName} have time left for retirement is ${retirement} years`;
+// }
+
+// console.log(yearRetirement(2001, 'Rejuan'));
+// console.log(yearRetirement(1999, 'Samian'));
+
+
+
+// function cutoff (fruits){
+//     return fruits * 4
+// }
+
+// function fruitProcess(apples, oranges) {
+
+//     const applepieces = cutoff(apples);
+//     const orangepieces = cutoff(oranges);
+
+
+//     const juice = `This juice made of ${applepieces} apples and ${orangepieces} oranges`;
+//     return juice;
+// }
+
+// console.log(fruitProcess(2,2));
+
+
+// Arrow function
+// const calAge2 = birthYear => 2037 - birthYear;
+// const ageMain = calAge2(1991);
+// console.log(ageMain)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Coding Exercise 5
+function calcAverage(score1, score2, score3){
+    const average = (score1 + score2 + score3)/3;
+    return average;
 }
 
-console.log(yearRetirement(2001, 'Rejuan'));
-console.log(yearRetirement(1999, 'Samian'));
+
+const dolphinsAverage = calcAverage(44, 23, 71);
+const koalasAverage = calcAverage(85, 54, 41);
+
+console.log(`Dolphins average score ${dolphinsAverage}`);
+console.log(`Koalas average score ${koalasAverage}`);
+
