@@ -109,10 +109,28 @@
 // const ageMain = calAge2(1991);
 // console.log(ageMain)
 
+const calAge = function(birthYear) {
+    return 2037 - birthYear;
+}
+
+console.log(calAge(2001))
 
 
+const yearUntilRetire = function (birthYear) {
+    const age = 2025 - birthYear;
+    const yearLeft = 65 - age;
+    if (yearLeft < 0) {
+        return -1;
+    }
 
+    else {
+        return yearLeft
+    }
+    
 
+    
+}
+console.log(yearUntilRetire(1910))
 
 
 
@@ -138,42 +156,67 @@
 // console.log(`Koalas average score ${koalasAverage}`);
 
 
-const friend1 = 'Michael';
-const friend2 = 'Steven';
-const friend3 = 'Peter';
+// const friend1 = 'Michael';
+// const friend2 = 'Steven';
+// const friend3 = 'Peter';
 
-const friends = ['Michael', 'Steven', 'Peter'];
-console.log(friends);
+// const friends = ['Michael', 'Steven', 'Peter'];
+// console.log(friends);
 
-const years = new Array(1991, 1984, 2008);
+// const years = new Array(1991, 1984, 2008);
 
-console.log(friends[0]);
-console.log(friends[1]);
-
-
-console.log(friends.length); // 3
-console.log(friends[friends.length - 1]); 
-
-friends[1] = 'Jay';
-console.log(friends);
-
-const calcAge = function (birthYear) {
-    return 2037 - birthYear;
-};
-const yearss = [1990, 1967, 2002, 2010, 2018];
-const ages = [
-    calcAge(years[0]),
-    calcAge(years[1]),
-    calcAge(years[years.length - 1]),
-];
-console.log(ages); 
+// console.log(friends[0]);
+// console.log(friends[1]);
 
 
 
-const friendsB = ['Michael', 'Steven', 'Peter'];
 
-friends.push('Jay');
-console.log(friendsB); 
-// Add to beginning
-friends.unshift('John');
-console.log(friendsB);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// console.log(friends.length); // 3
+// console.log(friends[friends.length - 1]); 
+
+// friends[1] = 'Jay';
+// console.log(friends);
+
+// const calcAge = function (birthYear) {
+//     return 2037 - birthYear;
+// };
+// const yearss = [1990, 1967, 2002, 2010, 2018];
+// const ages = [
+//     calcAge(years[0]),
+//     calcAge(years[1]),
+//     calcAge(years[years.length - 1]),
+// ];
+// console.log(ages); 
+
+
+
+// const friendsB = ['Michael', 'Steven', 'Peter'];
+
+// friends.push('Jay');
+// console.log(friendsB); 
+// // Add to beginning
+// friends.unshift('John');
+// console.log(friendsB);
