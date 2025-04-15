@@ -227,7 +227,7 @@
 
 
 // Arrays
-
+// Part 1
 const friend1 = 'Samian';
 const friend2 = 'Rejuan';
 const friend3 = 'Ahmed';
@@ -251,3 +251,16 @@ const firstName = 'Rejuanul Islam';
 const rejuan = [firstName, 24, 'Chittagong']
 console.log(rejuan);
 console.log(rejuan.length);
+
+const calAge = function (birthYeah) {
+    return 2037 - birthYeah;
+}
+
+const yearss = [1992, 1998]
+console.log(calAge(years));
+
+const age1 = calAge(years[0]);
+const age2 = calAge(years[1]);
+const age3 = calAge(years[0]);
+
+console.log(age1)
