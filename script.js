@@ -109,28 +109,29 @@
 // const ageMain = calAge2(1991);
 // console.log(ageMain)
 
-const calAge = function(birthYear) {
-    return 2037 - birthYear;
-}
+// const calAge = function(birthYear) {
+//     return 2037 - birthYear;
+// }
 
-console.log(calAge(2001))
+// console.log(calAge(2001))
 
 
-const yearUntilRetire = function (birthYear) {
-    const age = 2025 - birthYear;
-    const yearLeft = 65 - age;
-    if (yearLeft < 0) {
-        return -1;
-    }
+// const yearUntilRetire = function (birthYear) {
+//     const age = 2025 - birthYear;
+//     const yearLeft = 65 - age;
+//     if (yearLeft < 0) {
+//         return -1;
+//     }
 
-    else {
-        return yearLeft
-    }
+//     else {
+//         return yearLeft
+//     }
     
 
     
-}
-console.log(yearUntilRetire(1910))
+// }
+// console.log(yearUntilRetire(1910));
+
 
 
 
@@ -220,3 +221,33 @@ console.log(yearUntilRetire(1910))
 // // Add to beginning
 // friends.unshift('John');
 // console.log(friendsB);
+
+
+
+
+
+// Arrays
+
+const friend1 = 'Samian';
+const friend2 = 'Rejuan';
+const friend3 = 'Ahmed';
+
+const friends = ['Samian', 'Rejuan', 'Ahmed']
+console.log(friends)
+
+const years = new Array(2001,2002,2003,2004);
+console.log(years)
+
+console.log(friends[1])
+
+console.log(friends.length);
+console.log(friends[friends.length - 1]);
+
+friends[2] = 'Jay'
+console.log(friends)
+
+
+const firstName = 'Rejuanul Islam';
+const rejuan = [firstName, 24, 'Chittagong']
+console.log(rejuan);
+console.log(rejuan.length);
