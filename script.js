@@ -228,37 +228,48 @@
 
 // Arrays
 // Part 1
-const friend1 = 'Samian';
-const friend2 = 'Rejuan';
-const friend3 = 'Ahmed';
+// const friend1 = 'Samian';
+// const friend2 = 'Rejuan';
+// const friend3 = 'Ahmed';
 
-const friends = ['Samian', 'Rejuan', 'Ahmed']
-console.log(friends)
+// const friends = ['Samian', 'Rejuan', 'Ahmed']
+// console.log(friends)
 
-const y = new Array(2001,2002,2003,2004);
-console.log(y)
+// const y = new Array(2001,2002,2003,2004);
+// console.log(y)
 
-console.log(friends[1])
+// console.log(friends[1])
 
-console.log(friends.length);
-console.log(friends[friends.length - 1]);
+// console.log(friends.length);
+// console.log(friends[friends.length - 1]);
 
-friends[2] = 'Jay'
-console.log(friends)
+// friends[2] = 'Jay'
+// console.log(friends)
 
 // Exercise 
-const calAge = function (birthYear){
-    return 2037 - birthYear;
-}
+// const calAge = function (birthYear){
+//     return 2037 - birthYear;
+// }
 
-const year = [2001,2002,2003,2004];
+// const year = [2001,2002,2003,2004];
 
-const age1= calAge(year[0])
-const age2= calAge(year[1])
-const age3= calAge(year[year.length -1])
-console.log(age1, age2, age3)
-console.log(age2)
-console.log(age3)
+// const age1= calAge(year[0])
+// const age2= calAge(year[1])
+// const age3= calAge(year[year.length -1])
+// console.log(age1, age2, age3)
+// console.log(age2)
+// console.log(age3)
+
+
+// const ages = [calAge(year[0]), calAge(year[1]), calAge(year[year.length -1])]
+// console.log(ages)
+
+const friends = ['Samian', 'Ahned', 'Rejuan'];
+console.log(friends)
+console.log(friends.length)
+
+friends.push('Jay')
+console.log(friends)
 
 
 
