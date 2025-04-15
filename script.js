@@ -228,23 +228,41 @@
 
 // Arrays
 // Part 1
-// const friend1 = 'Samian';
-// const friend2 = 'Rejuan';
-// const friend3 = 'Ahmed';
+const friend1 = 'Samian';
+const friend2 = 'Rejuan';
+const friend3 = 'Ahmed';
 
-// const friends = ['Samian', 'Rejuan', 'Ahmed']
-// console.log(friends)
+const friends = ['Samian', 'Rejuan', 'Ahmed']
+console.log(friends)
 
-// const years = new Array(2001,2002,2003,2004);
-// console.log(years)
+const y = new Array(2001,2002,2003,2004);
+console.log(y)
 
-// console.log(friends[1])
+console.log(friends[1])
 
-// console.log(friends.length);
-// console.log(friends[friends.length - 1]);
+console.log(friends.length);
+console.log(friends[friends.length - 1]);
 
-// friends[2] = 'Jay'
-// console.log(friends)
+friends[2] = 'Jay'
+console.log(friends)
+
+// Exercise 
+const calAge = function (birthYear){
+    return 2037 - birthYear;
+}
+
+const year = [2001,2002,2003,2004];
+
+const age1= calAge(year[0])
+const age2= calAge(year[1])
+const age3= calAge(year[year.length -1])
+console.log(age1, age2, age3)
+console.log(age2)
+console.log(age3)
+
+
+
+
 
 
 // const firstName = 'Rejuanul Islam';
@@ -269,30 +287,4 @@
 
 
 // Introduction to Objects
-const rejuan = {
-    firstName: 'Rejuanul',
-    lastName: 'Islam',
-    age: 2037 - 2001,
-    job: 'teacher',
-    friends: ['Michael', 'Peter', 'Steven'],
-};
 
-
-console.log(rejuan.lastName);
-console.log(rejuan['lastName']);
-
-
-
-// bracket notation
-const nameKey = 'Name';
-console.log(rejuan['first' + nameKey]);
-console.log(rejuan['last' + nameKey]);
-
-const interestedIn = prompt('What do you want to know about Rejuan?');
-if (rejuan[interestedIn]) {
-    console.log(rejuan[interestedIn]);
-} else {
-    console.log(
-        'Wrong request! Choose between firstName, lastName, age, job and friends.',
-    );
-}
