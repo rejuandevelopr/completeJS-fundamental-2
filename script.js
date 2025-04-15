@@ -283,6 +283,7 @@ console.log(rejuan['lastName']);
 
 
 
+// bracket notation
 const nameKey = 'Name';
 console.log(rejuan['first' + nameKey]);
 console.log(rejuan['last' + nameKey]);
