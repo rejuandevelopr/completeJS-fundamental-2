@@ -126,9 +126,9 @@
 //     else {
 //         return yearLeft
 //     }
-    
 
-    
+
+
 // }
 // console.log(yearUntilRetire(1910));
 
@@ -228,39 +228,70 @@
 
 // Arrays
 // Part 1
-const friend1 = 'Samian';
-const friend2 = 'Rejuan';
-const friend3 = 'Ahmed';
+// const friend1 = 'Samian';
+// const friend2 = 'Rejuan';
+// const friend3 = 'Ahmed';
 
-const friends = ['Samian', 'Rejuan', 'Ahmed']
-console.log(friends)
+// const friends = ['Samian', 'Rejuan', 'Ahmed']
+// console.log(friends)
 
-const years = new Array(2001,2002,2003,2004);
-console.log(years)
+// const years = new Array(2001,2002,2003,2004);
+// console.log(years)
 
-console.log(friends[1])
+// console.log(friends[1])
 
-console.log(friends.length);
-console.log(friends[friends.length - 1]);
+// console.log(friends.length);
+// console.log(friends[friends.length - 1]);
 
-friends[2] = 'Jay'
-console.log(friends)
+// friends[2] = 'Jay'
+// console.log(friends)
 
 
-const firstName = 'Rejuanul Islam';
-const rejuan = [firstName, 24, 'Chittagong']
-console.log(rejuan);
-console.log(rejuan.length);
+// const firstName = 'Rejuanul Islam';
+// const rejuan = [firstName, 24, 'Chittagong']
+// console.log(rejuan);
+// console.log(rejuan.length);
 
-const calAge = function (birthYeah) {
-    return 2037 - birthYeah;
+// const calAge = function (birthYeah) {
+//     return 2037 - birthYeah;
+// }
+
+// const yearss = [1992, 1998]
+// console.log(calAge(years));
+
+// const age1 = calAge(years[0]);
+// const age2 = calAge(years[1]);
+// const age3 = calAge(years[0]);
+
+// console.log(age1)
+
+
+
+
+// Introduction to Objects
+const rejuan = {
+    firstName: 'Rejuanul',
+    lastName: 'Islam',
+    age: 2037 - 2001,
+    job: 'teacher',
+    friends: ['Michael', 'Peter', 'Steven'],
+};
+
+
+console.log(rejuan.lastName);
+console.log(rejuan['lastName']);
+
+
+
+const nameKey = 'Name';
+console.log(rejuan['first' + nameKey]);
+console.log(rejuan['last' + nameKey]);
+
+const interestedIn = prompt('What do you want to know about Rejuan?');
+if (rejuan[interestedIn]) {
+    console.log(rejuan[interestedIn]);
+} else {
+    console.log(
+        'Wrong request! Choose between firstName, lastName, age, job and friends.',
+    );
 }
-
-const yearss = [1992, 1998]
-console.log(calAge(years));
-
-const age1 = calAge(years[0]);
-const age2 = calAge(years[1]);
-const age3 = calAge(years[0]);
-
-console.log(age1)
