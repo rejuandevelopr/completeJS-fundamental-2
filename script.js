@@ -338,24 +338,68 @@
 // // task 4 end
 
 // Function to calculate tip
-const calcTip = bill => (bill >= 50 && bill <= 300) ? bill * 0.15 : bill * 0.20;
+// const calcTip = bill => (bill >= 50 && bill <= 300) ? bill * 0.15 : bill * 0.20;
 
-// Test the function with a value of 100
-console.log(`Tip for bill 100 is: ${calcTip(100)}`);
+// // Test the function with a value of 100
+// console.log(`Tip for bill 100 is: ${calcTip(100)}`);
 
-// Bills array
-const bills = [125, 555, 44];
+// // Bills array
+// const bills = [125, 555, 44];
 
-// Tips array using calcTip function
-const tips = bills.map(calcTip);
+// // Tips array using calcTip function
+// const tips = bills.map(calcTip);
 
-// Totals array: bill + tip
-const totals = bills.map((bill, index) => bill + tips[index]);
+// // Totals array: bill + tip
+// const totals = bills.map((bill, index) => bill + tips[index]);
 
-// Output
-console.log('Bills:', bills);
-console.log('Tips:', tips);
-console.log('Totals:', totals);
+// // Output
+// console.log('Bills:', bills);
+// console.log('Tips:', tips);
+// console.log('Totals:', totals);
+
+
+
+
+
+// Objects
+const rejuanArray = [
+    'Rejuanul',
+    'Islam',
+    2025-2001,
+    'Programmer',
+    ['Samian', 'Peter','Steven']
+]
+
+
+const rejuan = {
+    firstName: 'Rejuanul',
+    lastName: 'Islam',
+    age: 2025 - 2001,
+    job: 'Freelancer',
+    friends: ['Samian', 'Peter', 'Steven']
+}
+console.log(rejuan.lastName);
+
+const nameKey = 'Name';
+console.log(rejuan['first' + nameKey]);
+console.log(rejuan['last' + nameKey]);
+
+
+// const interestedIn = prompt("What you want to know about Rejuan? Choose between firstName, lastName, age, job or friends");
+// rejuan.location = 'Chittagong'
+// console.log(rejuan[interestedIn]);
+
+
+// Challenge
+// "Rejuan has 3 friends, and his best friend is called Samian"
+console.log(`${rejuan.firstName} has ${rejuan.friends.length} friends, and his 
+    best friend is called ${rejuan.friends[0]}`)
+
+
+
+
+
+
 
 
 
@@ -385,7 +429,35 @@ console.log('Totals:', totals);
 // console.log(age1)
 
 
+// Objects Methods
+// const rejuan = {
+//     firstName: 'Rejuanul',
+//     lastName: 'Islam',
+//     birthYear: 1991,
+//     job: 'teacher',
+//     friends: ['man1', 'man2', 'man3'],
+//     hasDriversLicense: true,
+//     calcAge: function () {
+
+//         this.age = 2025 - this.birthYear;
+//         return this.age;
+//     },
+//     getSummary: function () {
+//         return `${this.firstName} ${this.lastName
+//             }
+//      is a ${this.calcAge()}-year old ${this.job}. He has ${this.friends.length
+//             }
+//      friends and ${this.hasDriversLicense ? 'a' : 'no'} driver's 
+//     license.`;
+//     },
+// };
+// console.log(rejuan.calcAge());
+// console.log(rejuan.age);
+
+// console.log(rejuan.getSummary());
 
 
-// Introduction to Objects
-
+// // The for Loop
+// for (let rep = 1; rep <= 10; rep++) {
+//     console.log(`Lifting weights repetition ${rep}`);
+// } 
