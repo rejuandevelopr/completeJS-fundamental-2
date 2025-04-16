@@ -264,15 +264,48 @@
 // const ages = [calAge(year[0]), calAge(year[1]), calAge(year[year.length -1])]
 // console.log(ages)
 
-const friends = ['Samian', 'Ahned', 'Rejuan'];
-console.log(friends)
-console.log(friends.length)
+// const friends = ['Samian', 'Ahned', 'Rejuan'];
+// console.log(friends)
+// console.log(friends.length)
 
-friends.push('Jay')
-console.log(friends)
+// friends.push('Jay')
+// console.log(friends)
+
+// friends.unshift('Hello world')
+// console.log(friends)
+
+// friends.pop()
+// const popped = friends.pop()
+// console.log(popped)
+// console.log(friends)
 
 
+// friends.shift()
+// console.log(friends)
 
+// console.log(friends.indexOf('Samian'))
+// console.log(friends.includes('Samian'))
+
+// if (friends.includes('Samian')) {
+//     console.log("You have friend name Samian")
+// }
+
+
+function calcTip (value) {
+     if (value >= 50 && value <= 300) {
+        let mainTips = value*0.15
+        let totalBills = value + mainTips;
+        return console.log(`Steven gets ${totalBills} total bill included ${mainTips} tips`);
+     }
+
+     else {
+        let mainTips = value*0.20
+        let totalBills = value + mainTips;
+        return console.log(`Steven gets ${totalBills} total bill included100 ${mainTips} tips`);
+     }
+}
+
+calcTip(Number(prompt("Enter the bills value: ")))
 
 
 
