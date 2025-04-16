@@ -291,21 +291,78 @@
 // }
 
 
-function calcTip (value) {
-     if (value >= 50 && value <= 300) {
-        let mainTips = value*0.15
-        let totalBills = value + mainTips;
-        return console.log(`Steven gets ${totalBills} total bill included ${mainTips} tips`);
-     }
+// // task 1
+// function calcTip (value) {
+//      if (value >= 50 && value <= 300) {
+//         let mainTips = value*0.15
+//         let totalBills = value + mainTips;
+//         return console.log(`Steven will get ${mainTips} tips`);
+//      }
 
-     else {
-        let mainTips = value*0.20
-        let totalBills = value + mainTips;
-        return console.log(`Steven gets ${totalBills} total bill included100 ${mainTips} tips`);
-     }
-}
+//      else {
+//         let mainTips = value*0.20
+//         let totalBills = value + mainTips;
+//         return console.log(`Steven will get gets ${mainTips} tips`);
+//      }
+// }
 
-calcTip(Number(prompt("Enter the bills value: ")))
+// calcTip(Number(prompt("Enter the bills value: ")));
+// // task 1 end
+
+
+// // task 2
+// const bills = [125, 555, 44];
+// const data1 = bills[0];
+// const data2 = bills[1];
+// const data3 = bills[2];
+// calcTip(data1);
+// calcTip(data2);
+// calcTip(data3);
+// // task 2 end 
+
+// // task 3
+// const tips1 = 125*0.15;
+// const tips2 = 555*0.15;
+// const tips3 = 44*0.15;
+
+// const allTips = [tips1, tips2, tips3]
+// console.log(allTips)
+// // task 3 end
+
+// // task 4 
+// const total1 = bills[0] + tips1;
+// const total2 = bills[1] + tips2;
+// const total3 = bills[2] + tips3;
+// const totals = [total1, total2, total3]
+// console.log(totals)
+// // task 4 end
+
+// Function to calculate tip
+const calcTip = bill => (bill >= 50 && bill <= 300) ? bill * 0.15 : bill * 0.20;
+
+// Test the function with a value of 100
+console.log(`Tip for bill 100 is: ${calcTip(100)}`);
+
+// Bills array
+const bills = [125, 555, 44];
+
+// Tips array using calcTip function
+const tips = bills.map(calcTip);
+
+// Totals array: bill + tip
+const totals = bills.map((bill, index) => bill + tips[index]);
+
+// Output
+console.log('Bills:', bills);
+console.log('Tips:', tips);
+console.log('Totals:', totals);
+
+
+
+
+
+
+
 
 
 
