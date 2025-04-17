@@ -470,20 +470,20 @@ for (let rep = 1; rep <= 10; rep++) {
 }
 
 
-const rejuanArray = [
-    'Rejuanul',
-    'Islam',
-    2025 - 2001,
-    'Freelancer',
-    ['Michael', 'Peter', 'Steven'],
-];
-const types = [];
-for (let i = 0; i < rejuanArray.length; i++) {
-    console.log(rejuanArray[i], typeof rejuanArray[i]);
+// const rejuanArray = [
+//     'Rejuanul',
+//     'Islam',
+//     2025 - 2001,
+//     'Freelancer',
+//     ['Michael', 'Peter', 'Steven'],
+// ];
+// const types = [];
+// for (let i = 0; i < rejuanArray.length; i++) {
+//     console.log(rejuanArray[i], typeof rejuanArray[i]);
 
-    types.push(typeof rejuanArray[i]);
-}
-console.log(types); 
+//     types.push(typeof rejuanArray[i]);
+// }
+// console.log(types); 
 
 
 const years = [1991, 2007, 1969, 2020]; 
