@@ -362,13 +362,13 @@
 
 
 // Objects
-const rejuanArray = [
-    'Rejuanul',
-    'Islam',
-    2025-2001,
-    'Programmer',
-    ['Samian', 'Peter','Steven']
-]
+// const rejuanArray = [
+//     'Rejuanul',
+//     'Islam',
+//     2025-2001,
+//     'Programmer',
+//     ['Samian', 'Peter','Steven']
+// ]
 
 
 const rejuan = {
@@ -461,3 +461,48 @@ console.log(`${rejuan.firstName} has ${rejuan.friends.length} friends, and his
 // for (let rep = 1; rep <= 10; rep++) {
 //     console.log(`Lifting weights repetition ${rep}`);
 // } 
+
+
+
+
+for (let rep = 1; rep <= 10; rep++) {
+    console.log(`Hello world`)
+}
+
+
+const rejuanArray = [
+    'Rejuanul',
+    'Islam',
+    2025 - 2001,
+    'Freelancer',
+    ['Michael', 'Peter', 'Steven'],
+];
+const types = [];
+for (let i = 0; i < rejuanArray.length; i++) {
+    console.log(rejuanArray[i], typeof rejuanArray[i]);
+
+    types.push(typeof rejuanArray[i]);
+}
+console.log(types); 
+
+
+const years = [1991, 2007, 1969, 2020]; 
+const ages = []; 
+for (let i = 0; i < years.length; i++) { 
+  ages.push(2037 - years[i]); 
+} 
+console.log(ages); 
+
+
+console.log('Strings'); 
+for (let i = 0; i < rejuanArray.length; i++) { 
+if (typeof rejuanArray[i] !== 'string') continue; 
+console.log(rejuanArray[i]); 
+} 
+
+
+console.log('Break'); 
+for (let i = 0; i < rejuanArray.length; i++) { 
+if (typeof rejuanArray[i] === 'number') break; 
+console.log(rejuanArray[i]); 
+} 
