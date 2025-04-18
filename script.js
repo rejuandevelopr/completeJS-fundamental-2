@@ -371,29 +371,29 @@
 // ]
 
 
-const rejuan = {
-    firstName: 'Rejuanul',
-    lastName: 'Islam',
-    age: 2025 - 2001,
-    job: 'Freelancer',
-    friends: ['Samian', 'Peter', 'Steven']
-}
-console.log(rejuan.lastName);
+// const rejuan = {
+//     firstName: 'Rejuanul',
+//     lastName: 'Islam',
+//     age: 2025 - 2001,
+//     job: 'Freelancer',
+//     friends: ['Samian', 'Peter', 'Steven']
+// }
+// console.log(rejuan.lastName);
 
-const nameKey = 'Name';
-console.log(rejuan['first' + nameKey]);
-console.log(rejuan['last' + nameKey]);
-
-
-// const interestedIn = prompt("What you want to know about Rejuan? Choose between firstName, lastName, age, job or friends");
-// rejuan.location = 'Chittagong'
-// console.log(rejuan[interestedIn]);
+// const nameKey = 'Name';
+// console.log(rejuan['first' + nameKey]);
+// console.log(rejuan['last' + nameKey]);
 
 
-// Challenge
-// "Rejuan has 3 friends, and his best friend is called Samian"
-console.log(`${rejuan.firstName} has ${rejuan.friends.length} friends, and his 
-    best friend is called ${rejuan.friends[0]}`)
+// // const interestedIn = prompt("What you want to know about Rejuan? Choose between firstName, lastName, age, job or friends");
+// // rejuan.location = 'Chittagong'
+// // console.log(rejuan[interestedIn]);
+
+
+// // Challenge
+// // "Rejuan has 3 friends, and his best friend is called Samian"
+// console.log(`${rejuan.firstName} has ${rejuan.friends.length} friends, and his 
+//     best friend is called ${rejuan.friends[0]}`)
 
 
 
@@ -455,9 +455,9 @@ console.log(`${rejuan.firstName} has ${rejuan.friends.length} friends, and his
 
 
 
-for (let rep = 1; rep <= 10; rep++) {
-    console.log(`Lifting weights repetition ${rep}`)
-}
+// for (let rep = 1; rep <= 10; rep++) {
+//     console.log(`Lifting weights repetition ${rep}`)
+// }
 
 
 const forArray = [
@@ -466,35 +466,70 @@ const forArray = [
     2025 - 2001,
     'Chittagong',
     'Freelancer',
-    ['Michael', 'Peter']
+    ['Michael', 'Peter'],
+    true
 ]
 
-for (let i = 0; i <= 5; i++) {
-    console.log(forArray[i])
+// for (let i = 0; i <= 5; i++) {
+//     console.log(forArray[i])
+// }
+
+const type = [];
+
+for (let i = 0; i < forArray.length ; i++){
+    console.log(forArray[i], typeof forArray[i]);
+
+    // type[i] = typeof forArray [i];
+    type.push(typeof forArray[i])
+}
+
+console.log(type);
+
+
+const yearss = [1992,1996,2001,2001];
+const ages = [];
+
+for (let i = 0; i < yearss.length; i++){
+    ages.push(2025 - yearss[i]);
+}
+console.log(ages)
+
+
+
+// Continue and break
+console.log('--Only string--')
+for (let i = 0; i < yearss.length; i++){
+    if (typeof forArray[i] !== 'string') continue;
+
+    console.log(forArray[i], typeof forArray[i])
 }
 
 
-const rejuansArray = [
-    'Rejuanul',
-    'Islam',
-    2025 - 2001,
-    'Freelancer',
-    ['Michael', 'Peter', 'Steven'],
-];
-
-for (let i = rejuansArray.length - 1; i >= 0; i--) {
-    console.log(rejuansArray[i]);
-}
 
 
-for (let exercise = 1; exercise <= 3; exercise++) {
-    console.log(`----- Starting exercise ${exercise} ------`);
 
-    for (let rep = 1; rep <= 5; rep++) {
-        console.log(`Exercise ${exercise}: Lifting weights repetition 
-  ${rep}    `);
-    }
-}
+
+// const rejuansArray = [
+//     'Rejuanul',
+//     'Islam',
+//     2025 - 2001,
+//     'Freelancer',
+//     ['Michael', 'Peter', 'Steven'],
+// ];
+
+// for (let i = rejuansArray.length - 1; i >= 0; i--) {
+//     console.log(rejuansArray[i]);
+// }
+
+
+// for (let exercise = 1; exercise <= 3; exercise++) {
+//     console.log(`----- Starting exercise ${exercise} ------`);
+
+//     for (let rep = 1; rep <= 5; rep++) {
+//         console.log(`Exercise ${exercise}: Lifting weights repetition 
+//   ${rep}    `);
+//     }
+// }
 
 
 
