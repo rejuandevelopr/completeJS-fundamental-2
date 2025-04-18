@@ -400,16 +400,6 @@ console.log(`${rejuan.firstName} has ${rejuan.friends.length} friends, and his
 
 
 
-
-
-
-
-
-
-
-
-
-
 // const firstName = 'Rejuanul Islam';
 // const rejuan = [firstName, 24, 'Chittagong']
 // console.log(rejuan);
@@ -466,8 +456,47 @@ console.log(`${rejuan.firstName} has ${rejuan.friends.length} friends, and his
 
 
 for (let rep = 1; rep <= 10; rep++) {
-    console.log(`Hello world`)
+    console.log(`Lifting weights repetition ${rep}`)
 }
+
+
+const forArray = [
+    'Rejuanul',
+    'Islam',
+    2025 - 2001,
+    'Chittagong',
+    'Freelancer',
+    ['Michael', 'Peter']
+]
+
+for (let i = 0; i <= 5; i++) {
+    console.log(forArray[i])
+}
+
+
+const rejuansArray = [
+    'Rejuanul',
+    'Islam',
+    2025 - 2001,
+    'Freelancer',
+    ['Michael', 'Peter', 'Steven'],
+];
+
+for (let i = rejuansArray.length - 1; i >= 0; i--) {
+    console.log(rejuansArray[i]);
+}
+
+
+for (let exercise = 1; exercise <= 3; exercise++) {
+    console.log(`----- Starting exercise ${exercise} ------`);
+
+    for (let rep = 1; rep <= 5; rep++) {
+        console.log(`Exercise ${exercise}: Lifting weights repetition 
+  ${rep}    `);
+    }
+}
+
+
 
 
 // const rejuanArray = [
@@ -483,26 +512,26 @@ for (let rep = 1; rep <= 10; rep++) {
 
 //     types.push(typeof rejuanArray[i]);
 // }
-// console.log(types); 
+// console.log(types);
 
 
-const years = [1991, 2007, 1969, 2020]; 
-const ages = []; 
-for (let i = 0; i < years.length; i++) { 
-  ages.push(2037 - years[i]); 
-} 
-console.log(ages); 
+// const years = [1991, 2007, 1969, 2020];
+// const ages = [];
+// for (let i = 0; i < years.length; i++) {
+//   ages.push(2037 - years[i]);
+// }
+// console.log(ages);
 
 
-console.log('Strings'); 
-for (let i = 0; i < rejuanArray.length; i++) { 
-if (typeof rejuanArray[i] !== 'string') continue; 
-console.log(rejuanArray[i]); 
-} 
+// console.log('Strings');
+// for (let i = 0; i < rejuanArray.length; i++) {
+// if (typeof rejuanArray[i] !== 'string') continue;
+// console.log(rejuanArray[i]);
+// }
 
 
-console.log('Break'); 
-for (let i = 0; i < rejuanArray.length; i++) { 
-if (typeof rejuanArray[i] === 'number') break; 
-console.log(rejuanArray[i]); 
-} 
+// console.log('Break');
+// for (let i = 0; i < rejuanArray.length; i++) {
+// if (typeof rejuanArray[i] === 'number') break;
+// console.log(rejuanArray[i]);
+// } 
