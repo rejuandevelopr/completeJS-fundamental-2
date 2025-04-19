@@ -476,7 +476,7 @@ const forArray = [
 
 const type = [];
 
-for (let i = 0; i < forArray.length ; i++){
+for (let i = 0; i < forArray.length; i++) {
     console.log(forArray[i], typeof forArray[i]);
 
     // type[i] = typeof forArray [i];
@@ -486,10 +486,10 @@ for (let i = 0; i < forArray.length ; i++){
 console.log(type);
 
 
-const yearss = [1992,1996,2001,2001];
+const yearss = [1992, 1996, 2001, 2001];
 const ages = [];
 
-for (let i = 0; i < yearss.length; i++){
+for (let i = 0; i < yearss.length; i++) {
     ages.push(2025 - yearss[i]);
 }
 console.log(ages)
@@ -498,16 +498,33 @@ console.log(ages)
 
 // Continue and break
 console.log('--Only string--')
-for (let i = 0; i < yearss.length; i++){
+for (let i = 0; i < yearss.length; i++) {
     if (typeof forArray[i] !== 'string') continue;
 
     console.log(forArray[i], typeof forArray[i])
 }
 
 
+// while Loop
+console.log('--Break with number--')
+for (let i = 0; i < yearss.length; i++) {
+    if (typeof forArray[i] === 'number') break;
+
+    console.log(forArray[i], typeof forArray[i])
+}
+
+let rep = 1;
+while (rep <= 10) {
+    console.log(`Lifting weights repetition ${rep} `)
+    rep++;
+}
 
 
-
+let dice = Math.trunc(Math.random() * 6) + 1;
+while (dice !== 6) {
+    console.log(`You rolled a ${dice}`);
+    dice = Math.trunc(Math.random() * 6) + 1;
+}
 
 // const rejuansArray = [
 //     'Rejuanul',
@@ -526,7 +543,7 @@ for (let i = 0; i < yearss.length; i++){
 //     console.log(`----- Starting exercise ${exercise} ------`);
 
 //     for (let rep = 1; rep <= 5; rep++) {
-//         console.log(`Exercise ${exercise}: Lifting weights repetition 
+//         console.log(`Exercise ${exercise}: Lifting weights repetition
 //   ${rep}    `);
 //     }
 // }
