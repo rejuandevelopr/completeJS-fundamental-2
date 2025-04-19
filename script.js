@@ -513,11 +513,7 @@ for (let i = 0; i < yearss.length; i++) {
     console.log(forArray[i], typeof forArray[i])
 }
 
-let rep = 1;
-while (rep <= 10) {
-    console.log(`Lifting weights repetition ${rep} `)
-    rep++;
-}
+
 
 
 
