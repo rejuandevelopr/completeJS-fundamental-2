@@ -460,6 +460,52 @@
 // }
 
 
+// const forArray = [
+//     'Rejuanul',
+//     'Islam',
+//     2025 - 2001,
+//     'Chittagong',
+//     'Freelancer',
+//     ['Michael', 'Peter'],
+//     true
+// ]
+
+// // for (let i = 0; i <= 5; i++) {
+// //     console.log(forArray[i])
+// // }
+
+// const type = [];
+
+// for (let i = 0; i < forArray.length; i++) {
+//     console.log(forArray[i], typeof forArray[i]);
+
+//     // type[i] = typeof forArray [i];
+//     type.push(typeof forArray[i])
+// }
+
+// console.log(type);
+
+
+// const yearss = [1992, 1996, 2001, 2001];
+// const ages = [];
+
+// for (let i = 0; i < yearss.length; i++) {
+//     ages.push(2025 - yearss[i]);
+// }
+// console.log(ages)
+
+
+
+// // Continue and break
+// console.log('--Only string--')
+// for (let i = 0; i < yearss.length; i++) {
+//     if (typeof forArray[i] !== 'string') continue;
+
+//     console.log(forArray[i], typeof forArray[i])
+// }
+
+
+
 const forArray = [
     'Rejuanul',
     'Islam',
@@ -467,51 +513,21 @@ const forArray = [
     'Chittagong',
     'Freelancer',
     ['Michael', 'Peter'],
-    true
 ]
 
-// for (let i = 0; i <= 5; i++) {
-//     console.log(forArray[i])
-// }
-
-const type = [];
-
-for (let i = 0; i < forArray.length; i++) {
-    console.log(forArray[i], typeof forArray[i]);
-
-    // type[i] = typeof forArray [i];
-    type.push(typeof forArray[i])
-}
-
-console.log(type);
-
-
-const yearss = [1992, 1996, 2001, 2001];
-const ages = [];
-
-for (let i = 0; i < yearss.length; i++) {
-    ages.push(2025 - yearss[i]);
-}
-console.log(ages)
-
-
-
-// Continue and break
-console.log('--Only string--')
-for (let i = 0; i < yearss.length; i++) {
-    if (typeof forArray[i] !== 'string') continue;
-
-    console.log(forArray[i], typeof forArray[i])
+for ( let i = forArray.length - 1; i >= 0; i--) {
+    console.log(i, forArray[i])
 }
 
 
-// while Loop
-console.log('--Break with number--')
-for (let i = 0; i < yearss.length; i++) {
-    if (typeof forArray[i] === 'number') break;
+for (let exercise = 1; exercise < 4; exercise++ ){
+    console.log(`---- Exercise ${exercise}`);
 
-    console.log(forArray[i], typeof forArray[i])
-}
+    for (let rep = 1; rep < 6; rep++ ){
+        console.log(`Lifting weights ${rep}`)
+    }
+} 
+
 
 
 
